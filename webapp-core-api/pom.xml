@@ -60,7 +60,7 @@
 		</dependency>
 		
 		<dependency>
-			<groupId>com.himanshu.spring</groupId>
+			<groupId>com.himanshu.struts</groupId>
 			<artifactId>struts-1</artifactId>
 			<version>${project.version}</version>
 			<classifier>classes</classifier>
@@ -92,14 +92,6 @@
 			<version>${jersey-version}</version>
 		</dependency>-->
 	</dependencies>
-	<properties>
-		<slf4j-version>1.6.0</slf4j-version>
-		<logback-version>0.9.30</logback-version>
-		<spring-version>2.5.6</spring-version>
-		<jetty-version>6.1.26</jetty-version>
-		<commons-configuration>1.7</commons-configuration>
-		<jersey-version>1.11</jersey-version>
-	</properties>
 	<build>
 		<plugins>
 			<plugin>

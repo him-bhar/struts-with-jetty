@@ -76,34 +76,16 @@
 			<version>4.4</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-server</artifactId>
-			<version>${jersey-version}</version>
+        <dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>${struts-version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-servlet</artifactId>
-			<version>${jersey-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.ws.rs</groupId>
-			<artifactId>jsr311-api</artifactId>
-			<version>1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-client</artifactId>
-			<version>${jersey-version}</version>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-spring-plugin</artifactId>
+			<version>${struts-version}</version>
 		</dependency>
 	</dependencies>
-	<properties>
-		<slf4j-version>1.6.0</slf4j-version>
-		<logback-version>0.9.30</logback-version>
-		<spring-version>2.5.6</spring-version>
-		<jetty-version>6.1.26</jetty-version>
-		<commons-configuration>1.7</commons-configuration>
-		<jersey-version>1.11</jersey-version>
-	</properties>
 </project>
 

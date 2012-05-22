@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+	<constant name="struts.devMode" value="true" />
+
+	<package name="basicstruts2" extends="struts-default">
+
+		<action name="index">
+			<result>/WEB-INF/hello-struts.jsp</result>
+		</action>
+		
+		<action name="testaction" class="testAction" method="testActionMethod">
+			<result name="successView">/WEB-INF/hello-struts-action.jsp</result>
+		</action>
+		
+		<action name="testOgnlInputView" class="com.himanshu.struts.action.TestOGNLValue" method="getInputView">
+			<result name="test-ognl-input">/WEB-INF/test-ognl-input.jsp</result>
+		</action>
+		
+		<action name="submitOGNLValue" class="com.himanshu.struts.action.TestOGNLValue" method="getInputs">
+			<result name="test-ognl-output">/WEB-INF/test-ognl-output.jsp</result>
+		</action>
+
+	</package>
+
+</struts>
